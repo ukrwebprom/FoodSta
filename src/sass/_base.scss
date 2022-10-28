@@ -1,3 +1,56 @@
-body{
+@mixin font($weight, $size, $ls, $lh, $decoration, $transform, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    letter-spacing: $ls;
+    line-height: $lh;
+    text-decoration: $decoration;
+    text-transform: $transform;
+    color: $color;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    //font-family: $main-font;
     min-width: 320px;
+    margin:0;
+    padding:0;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width:$phone;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width:$tablet){
+        width:$tablet;
+    }
+    @media screen and (min-width:$desktop){
+        width:$desktop;
+    }
+    @media screen and (max-width:$phone){
+        width:100%;
+    }
 }
