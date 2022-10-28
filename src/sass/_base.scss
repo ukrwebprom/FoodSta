@@ -11,7 +11,7 @@
 body {
     background-color: $background-color;
     color: $text-color;
-    //font-family: $main-font;
+    font-family: $main-font;
     min-width: 320px;
     margin:0;
     padding:0;
@@ -40,15 +40,19 @@ img {
 }
 .container {
     width:$phone;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width:$tablet){
         width:$tablet;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     @media screen and (min-width:$desktop){
         width:$desktop;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     @media screen and (max-width:$phone){
         width:100%;
