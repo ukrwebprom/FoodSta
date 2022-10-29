@@ -1,23 +1,57 @@
 <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <p class="modal__title">Order Form</p>
-      <button class="modal__btn" data-modal-close>
+  <div class="modal">
+    <p class="modal__title">Order Form</p>
+    <button class="modal__btn" data-modal-close>
       <svg class="modal__icon">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
     <form class="modal-form">
-      
-          <label for="name" class="modal-form__label">Name</label>
-          <input type="text" id="name" placeholder="Your name" class="modal-form__input">
-
-          <label for="phone" class="modal-form__label">Phone number</label>
-          <input type="email" id="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" class="modal-form__input">
-
-          <label for="email" class="modal-form__label">E-mail</label>
-          <input type="tel" id="email" placeholder="example@gmail.com" class="modal-form__input">
-
-          <button type="submit" class="modal-form__btn">Send</button>
+      <div class="modal-form__filed">
+        <label for="name" class="modal-form__label">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Your name"
+          required
+          minlength="3"
+          maxlength="25"
+          class="modal-form__input"
+        />
+        <span class="modal-form__error"
+          >⚠ The name must be between 3 and 25 characters</span
+        >
+      </div>
+      <div class="modal-form__filed">
+        <label for="phone" class="modal-form__label">Phone number</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          required
+          minlength="10"
+          maxlength="13"
+          class="modal-form__input"
+        />
+        <span class="modal-form__error"
+          >⚠ This phone must be in the format 099 000 00 00</span
+        >
+      </div>
+      <div class="modal-form__filed">
+        <label for="email" class="modal-form__label">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="example@gmail.com"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          class="modal-form__input"
+        />
+        <span class="modal-form__error"
+          >⚠ Please enter a valid email address</span
+        >
+      </div>
+      <button type="submit" class="modal-form__btn">Send</button>
     </form>
   </div>
-  </div>
+</div>

@@ -80,9 +80,6 @@
 
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .modal-form__input:not(:last-of-type){
-    margin-bottom: 24px;
-  }
   .modal-form__input:placeholder-shown{
     color: #C4C4C4;
   }
@@ -100,7 +97,7 @@
     font-size: 13px;
     line-height: 1.5em;
     color: $text-color;
-    margin-top: 32px;
+    margin-top: 12px;
     cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,6 +113,9 @@
     right: 16px;
     width: 32px;
     height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
     border-radius: 50%;
     border: 0;
@@ -125,14 +125,36 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal__icon{
-   position: absolute;
+
    width: 24px;
    height: 24px;
-   top: 4px;
-   right: 4px;
   }
   .modal__btn:hover,
   .modal__btn:focus{
     background-color: $button-green;
   }
  
+ .modal-form__filed {
+	margin-bottom: 24px;
+    width: 100%;
+}
+ .modal-form__error {
+	color: red;
+	text-align: left;
+	font-size: 12px;
+	display: block;
+	margin-top: 3px;
+	display: none;
+    margin-left: 12px;
+ 
+}
+input:valid:not(:placeholder-shown) {
+	border-color: $dark-green;
+}
+
+input:invalid:not(:placeholder-shown) {
+	border-color: red;
+}
+input:invalid:not(:placeholder-shown) + .modal-form__error {
+	display: block;
+}
