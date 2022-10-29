@@ -1,3 +1,23 @@
-<div class="modal">
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <p class="modal__title">Order Form</p>
+      <button class="modal__btn" data-modal-close>
+      <svg class="modal__icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form">
+      
+          <label for="name" class="modal-form__label">Name</label>
+          <input type="text" id="name" placeholder="Your name" class="modal-form__input">
 
-</div>
+          <label for="phone" class="modal-form__label">Phone number</label>
+          <input type="email" id="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" class="modal-form__input">
+
+          <label for="email" class="modal-form__label">E-mail</label>
+          <input type="tel" id="email" placeholder="example@gmail.com" class="modal-form__input">
+
+          <button type="submit" class="modal-form__btn">Send</button>
+    </form>
+  </div>
+  </div>
