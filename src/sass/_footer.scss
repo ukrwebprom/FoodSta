@@ -1,3 +1,13 @@
 .footer {
     height:619px;
+    background: url(../images/footer-back-right-mob.png) no-repeat right,
+                url(../images/footer-back-left-mob.png) no-repeat left top 132px,
+                url(../images/footer-back-bottom-mob.png) no-repeat bottom;
+    
+    @media screen and (min-width:$tablet) {
+        background: url(../images/footer-back-tablet.png) no-repeat bottom right,
+    }
+    @media screen and (min-width:$desktop) {
+        background: url(../images/footer-back-desktop.png) no-repeat bottom,
+    }
 }
