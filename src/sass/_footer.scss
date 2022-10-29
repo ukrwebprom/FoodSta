@@ -4,6 +4,12 @@
                 url(../images/footer-back-left-mob.png) no-repeat left top 132px,
                 url(../images/footer-back-bottom-mob.png) no-repeat bottom;
     
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution: 2dppx) {
+
+           }
+    
     @media screen and (min-width:$tablet) {
         background: url(../images/footer-back-tablet.png) no-repeat bottom right,
     }
