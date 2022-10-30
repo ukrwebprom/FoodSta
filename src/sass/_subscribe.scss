@@ -1,4 +1,118 @@
 .subscribe{
-    background-color: blanchedalmond;
-    height:400px;
+background-color: $background-color;
+padding: 60px 0;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: $text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
+}
+
+.subscribe__description {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.subscribe__img {
+  margin-bottom: 17px;
+
+     @media screen and (min-width: $tablet) and (max-width: $desktop) {
+     width: 281px;
+    height: 136px;
+    margin-bottom: 20px;
+    margin-left: auto;
+     }
+
+   @media screen and (min-width: $desktop) {
+     width: 608px;
+     height: 266px;
+     margin: 0;
+  }
+}
+
+.subscribe__main {
+  @media screen and (min-width: $desktop) {
+    padding-top: 46px;
+    padding-bottom: 36px;
+    width: 656px;
+  }
+}
+
+.subscribe__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.subscribe__form {
+  @media screen and (min-width: $desktop){
+  display: flex; 
+  }
+}
+
+.subscribe__form-input {
+  outline: none;
+  padding-left: 12px;
+  margin-bottom: 20px;
+
+  height: 38px;
+
+  border-radius: 30px;
+  border: 1px solid $yellow-main;
+  color: #505050;
+
+  &:focus {
+    border: 1px solid $dark-green;
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $phone) {
+    width: 395px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 32px;
+    max-height: 42px;
+  }
+}
+
+.subscribe__button {
+  display: block;
+  border: none;
+  padding: 11px 22px;
+
+  height: 42px;
+
+  border-radius: 30px;
+  background-color: $button-green;
+  color: $text-color;
+
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
 }
