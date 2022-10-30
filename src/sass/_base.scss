@@ -16,6 +16,16 @@ body {
     margin:0;
     padding:0;
   }
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+li { 
+    margin: 0; 
+    padding: 0; 
+}
   .visually-hidden {
     position: absolute;
     width: 1px;
