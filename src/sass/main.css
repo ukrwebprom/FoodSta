@@ -61,6 +61,11 @@ img {
 }
 
 /* heder */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   position: relative;
 }
@@ -81,12 +86,16 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .navigation {
+    margin-right: 30px;
+  }
+}
 
 .navigation__list {
   display: flex;
-  justify-content: space-between;
   list-style: none;
-  margin-right: 30px;
+  justify-content: space-between;
   padding: 0;
 }
 @media (max-width: 767px) {
@@ -128,6 +137,7 @@ img {
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
+  margin-left: auto;
 }
 @media (max-width: 767px) {
   .header__button {
