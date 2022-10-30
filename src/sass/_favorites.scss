@@ -84,11 +84,23 @@
   @media screen and (min-width: $tablet) {
     min-width: 336px;
     min-height: 338px;
+    border: 14px solid $yellow-main;
+
+    &:active,
+    &:hover {
+      border: 14px solid $button-green;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     min-width: 394px;
     min-height: 397px;
+    border: 16px solid $yellow-main;
+
+    &:active,
+    &:hover {
+      border: 16px solid $button-green;
+    }
   }
 }
 
