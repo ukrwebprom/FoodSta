@@ -1,4 +1,8 @@
-.hero{
+.hero {
     background-color: bisque;
-    height:500px;
+    height: 500px;
+}
+
+.hero-title {
+    @include text(700, 28px)
 }
