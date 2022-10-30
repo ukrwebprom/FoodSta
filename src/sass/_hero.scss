@@ -1,4 +1,89 @@
-.hero{
-    background-color: bisque;
-    height:500px;
+.hero {
+  background-color: bisque;
+  height: 608px;
+}
+
+// slider styles
+
+.slider-wrapper {
+  position: relative;
+  width: 320px;
+  height: 320px;
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.slider {
+  @extend .list;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 14px solid $yellow-main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  @media screen and (min-width: 1280px) {
+    border: 26px solid $yellow-main;
+  }
+}
+
+.slider__item {
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.slider__image {
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 34px;
+  height: 28px;
+  z-index: 10;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #fefefe;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+  }
+}
+
+.slick-prev {
+  left: -13px;
+  background-image: url(../images/slider-images/arrow-left.svg);
+}
+
+.slick-next {
+  right: -13px;
+  background-image: url(../images/slider-images/arrow-right.svg);
 }

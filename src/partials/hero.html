@@ -1,5 +1,58 @@
 <section class="hero">
+  <div class="hero-content">
     <h1>Enjoy Your Favorite Food From Anywhere</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+    </p>
     <button>Order Now</button>
+  </div>
+
+  <div class="slider-wrapper">
+    <div class="slider">
+      <div class="slider__item">
+        <img
+          srcset="
+            ./images/slider-images/dish1-tablet.jpg      320w,
+            ./images/slider-images/dish1-tablet-2x.jpg   640w,
+            ./images/slider-images/dish1-desktop.jpg     580w,
+            ./images/slider-images/dish1-desktop-2x.jpg 1160w
+          "
+          sizes="(min-width: 1200px) 580px, 320px"
+          class="slider__image"
+          src="./images/slider-images/dish1-tablet.jpg"
+          alt="dish1"
+        />
+      </div>
+      <div class="slider__item">
+        <img
+          srcset="
+            ./images/slider-images/dish2-tablet.jpg      320w,
+            ./images/slider-images/dish2-tablet-2x.jpg   640w,
+            ./images/slider-images/dish2-desktop.jpg     580w,
+            ./images/slider-images/dish2-desktop-2x.jpg 1160w
+          "
+          sizes="(min-width: 1200px) 580px, 320px"
+          class="slider__image"
+          src="./images/slider-images/dish2-tablet.jpg"
+          alt="dish2"
+        />
+      </div>
+      <div class="slider__item">
+        <img
+          srcset="
+            ./images/slider-images/dish3-tablet.jpg      320w,
+            ./images/slider-images/dish3-tablet-2x.jpg   640w,
+            ./images/slider-images/dish3-desktop.jpg     580w,
+            ./images/slider-images/dish3-desktop-2x.jpg 1160w
+          "
+          sizes="(min-width: 1200px) 580px, 320px"
+          class="slider__image"
+          src="./images/slider-images/dish3-tablet.jpg"
+          alt="dish3"
+        />
+      </div>
+    </div>
+  </div>
 </section>
