@@ -1,0 +1,243 @@
+body {
+  background-color: #FEFEFE;
+  color: #2C2C2C;
+  font-family: "Roboto", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  background-color: aqua;
+  height: 200px;
+}
+
+.hero {
+  background-color: bisque;
+  height: 500px;
+}
+
+.offerings {
+  background-color: cadetblue;
+  height: 400px;
+}
+
+.favorites {
+  background-color: burlywood;
+  height: 300px;
+}
+
+.reviews__container {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  letter-spacing: 0.007em;
+  background-color: #FFE550;
+}
+@media screen and (min-width: 768px) {
+  .reviews__container {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reviews__container {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (min-width: 768px) {
+  .reviews__title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+.reviews__text {
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.14;
+}
+@media screen and (min-width: 768px) {
+  .reviews__text {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    gap: 139px;
+  }
+}
+
+.comments__item {
+  padding: 8px;
+  max-width: 501px;
+  background-color: #fff;
+  border-radius: 0 30px 30px 30px;
+}
+@media screen and (min-width: 768px) {
+  .comments__item {
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments__item {
+    padding: 14px;
+  }
+}
+
+.rating {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.rating__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.comments__text {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 768px) {
+  .comments__text {
+    font-size: 18px;
+  }
+}
+
+.comments__flex {
+  display: flex;
+  align-items: center;
+}
+
+.comments__photo {
+  margin-right: 16px;
+}
+
+.comments__reviewer {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.85px solid #7EB101;
+  padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .comments__reviewer {
+    border-right: 1px solid #7EB101;
+  }
+}
+
+.comments__name {
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.comments__person {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.subscribe {
+  background-color: blanchedalmond;
+  height: 400px;
+}
+
+.footer {
+  height: 619px;
+  background: url(../images/footer-back-right-mob.png) no-repeat right, url(../images/footer-back-left-mob.png) no-repeat left top 132px, url(../images/footer-back-bottom-mob.png) no-repeat bottom;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    background: url(../images/footer-back-tablet.png) no-repeat bottom right;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    background: url(../images/footer-back-desktop.png) no-repeat bottom;
+  }
+}/*# sourceMappingURL=main.css.map */
