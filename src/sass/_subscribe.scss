@@ -1,6 +1,5 @@
 .subscribe{
 background-color: $background-color;
-padding: 60px 0;
 }
 
 .subscribe__title {
@@ -43,19 +42,12 @@ padding: 60px 0;
   }
 }
 
-.subscribe__main {
-  @media screen and (min-width: $desktop) {
-    padding-top: 46px;
-    padding-bottom: 36px;
-    width: 656px;
-  }
-}
-
 .subscribe__container {
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -70,7 +62,7 @@ padding: 60px 0;
   padding-left: 12px;
   margin-bottom: 20px;
 
-  height: 38px;
+  height: 42px;
 
   border-radius: 30px;
   border: 1px solid $yellow-main;
@@ -80,12 +72,13 @@ padding: 60px 0;
     border: 1px solid $dark-green;
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
   }
 
-  @media screen and (min-width: $phone) {
+  @media screen and (min-width: $tablet) {
     width: 395px;
+    margin-right: 22px;
   }
 
   @media screen and (min-width: $desktop) {
