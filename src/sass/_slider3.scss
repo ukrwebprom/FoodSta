@@ -1,11 +1,11 @@
 #slider {
-    width:320px;
-    height:320px;
+    width:292px;
+    height:292px;
     position: relative;
     
     margin: 20px auto 0 auto;
     overflow: visible;
-    //box-sizing: border-box;
+    box-sizing: content-box;
   }
   .slid-wrap{
     width:100%;
@@ -18,7 +18,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    height: 300px;
+   // height: 300px;
     list-style: none;
   }
   
@@ -28,11 +28,11 @@
     float: left;
     margin: 0;
     padding: 0;
-    width: 300px;
-    height: 300px;
+    width: 292px;
+    height: 292px;
     background: #ccc;
     text-align: center;
-    line-height: 300px;
+    //line-height: 300px;
   }
   
   a.control_prev, a.control_next {
@@ -42,8 +42,8 @@
     z-index: 999;
     display: block;
     padding: 4% 3%;
-    width: 28px;
-    height: 34px;
+    width: 34px;
+    height: 28px;
     border-radius: 8px;
     background: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -60,10 +60,11 @@
   }
   
   a.control_prev {
-    border-radius: 0 2px 2px 0;
+    left:-10px;
+    //border-radius: 0 2px 2px 0;
   }
   
   a.control_next {
-    right: 0;
-    border-radius: 2px 0 0 2px;
+    right: -10px;
+    //border-radius: 2px 0 0 2px;
   }
