@@ -1,6 +1,7 @@
 <div class="footer">
     <div class="container footer-container">
         <div class="footer__wrap">
+            <div class="footer-top">
             <a href="./index.html" class="footer__link-logo">
                 <svg class="footer__logo" width="69px" height="52px">
                     <use href="./images/icons.svg#icon-logo"></use>
@@ -16,13 +17,15 @@
                     <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
+            </div>
             
             <div class="footer-sub">
-                <p class="footer-title">Subscribe</p>
+                <!--<p class="footer-title">Subscribe</p>-->
                 <form class="footer-form">
-                    <label class="footer-form__label">
-                        <input type="text" class="footer-form__field" name="mail" placeholder="Enter your email" />
-                    </label>
+                    <div class="footer-form__field">
+                        <label class="footer-form__label" for="mail">Subscribe</label>
+                        <input type="text" class="footer-form__input" id="mail" name="mail" placeholder="Enter your email" />
+                    </div>
                     <button type="submit" class="footer-form__button">Subscribe</button>
                 </form>
                 <p class="footer-form__agreetment">By subscribing you agree to with our <a class="footer-form__policy" href="#">Privacy
