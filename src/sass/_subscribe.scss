@@ -105,6 +105,7 @@ padding: 60px 0;
   border-radius: 30px;
   background-color: $button-green;
   color: $text-color;
+  transition: background-color 250ms $time-function;
 
 
   &:hover,
