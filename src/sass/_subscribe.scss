@@ -1,5 +1,29 @@
-.subscribe{
-background-color: $background-color;
+.subscribe {
+  background-image: url(../images/bc-subscribe320.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding-bottom: 60px;
+  padding-top: 17px;
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/bc-subscribe480.png);
+    background-size: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bc-subscribe768.png);
+    background-size: 768px;
+    padding-bottom: 100px;
+    padding-top: 46px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bc-subscribe1280.png);
+    background-size: 1280px;
+    padding-top: 134px;
+    padding-bottom: 64px;
+  }
 }
 
 .subscribe__title {
@@ -28,17 +52,17 @@ background-color: $background-color;
 .subscribe__img {
   margin-bottom: 17px;
 
-     @media screen and (min-width: $tablet) and (max-width: $desktop) {
-     width: 281px;
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 281px;
     height: 136px;
     margin-bottom: 20px;
     margin-left: auto;
-     }
+  }
 
-   @media screen and (min-width: $desktop) {
-     width: 608px;
-     height: 266px;
-     margin: 0;
+  @media screen and (min-width: $desktop) {
+    width: 608px;
+    height: 266px;
+    margin: 0;
   }
 }
 
@@ -52,8 +76,8 @@ background-color: $background-color;
 }
 
 .subscribe__form {
-  @media screen and (min-width: $desktop){
-  display: flex; 
+  @media screen and (min-width: $desktop) {
+    display: flex;
   }
 }
 
@@ -99,7 +123,6 @@ background-color: $background-color;
   background-color: $button-green;
   color: $text-color;
   transition: background-color 250ms $time-function;
-
 
   &:hover,
   &:focus {
