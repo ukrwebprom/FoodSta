@@ -6,20 +6,22 @@
 }
 
 .container {
-    position: relative;
+    //position: relative;
 }
 
 
-
+.hero-container {
+    display:flex;
+}
 .hero-title {
 
-    display: inline-block;
+    //display: inline-block;
 
-    @media screen and (min-width: 320px) {
+    //@media screen and (min-width: 320px) {
         @include font(700, 28, -1, 1.17, none, none, $text-color);
         margin-bottom: 28px;
         margin-top: 60px;
-    }
+    //}
 
     @media screen and (min-width: 768px) {
         @include font(700, 42, 0, 1.19, none, none, $text-color);
@@ -37,10 +39,10 @@
 
 .hero-text {
 
-    @media screen and (min-width: 320px) {
+    //@media screen and (min-width: 320px) {
         @include font(400, 14, normal, 1.5, none, none, $text-color);
         margin-bottom: 28px;
-    }
+    //}
 
     @media screen and (min-width: 768px) {
         @include font(400, 16, normal, 1.5, none, none, $text-color);
@@ -59,23 +61,15 @@
     border-color: transparent;
     border-radius: 30px;
     cursor: pointer;
-
-    &-text {
-        display: inline-block;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        padding-right: 18px;
-        padding-left: 18px;
-        @include font(500, 13, normal, 1.53, none, none, $text-color);
-
-    }
+    padding: 6px 18px;
+    @include font(500, 13, normal, 1.53, none, none, $text-color);
 }
 
 
 
 .swiper-container {
     display: none;
-    position: absolute;
+    //position: absolute;
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -111,7 +105,7 @@
 
 .ellipse {
     display: none;
-    position: absolute;
+    //position: absolute;
 
     @media screen and (min-width: 768px) {
         display: block;
