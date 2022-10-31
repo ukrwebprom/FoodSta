@@ -1,11 +1,14 @@
-.reviews {
+.reviews__container {
   padding-top: 60px;
+  padding-bottom: 25px;
   letter-spacing: 0.007em;
-  font-family: $main-font;
   background-color: $yellow-main;
-
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 20px;
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 100px;
+    padding-bottom: 0;
   }
 }
 
@@ -35,35 +38,30 @@
 }
 
 .comments {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
   @media screen and (min-width: $tablet) {
-    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 139px;
   }
 }
 
 .comments__item {
   padding: 8px;
-
+  max-width: 501px;
   background-color: #fff;
   border-radius: 0 30px 30px 30px;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
-  }
-
   @media screen and (min-width: $tablet) {
-    width: 336px;
     padding: 12px;
-    &:not(:last-child) {
-      margin: 0 32px 0 0;
-    }
   }
 
   @media screen and (min-width: $desktop) {
-    width: 501px;
     padding: 14px;
-    &:not(:last-child) {
-      margin-right: 139px;
-    }
   }
 }
 
@@ -103,9 +101,12 @@
 .comments__reviewer {
   display: flex;
   flex-direction: column;
-  border-right: 0.854167px solid $dark-green;
+  border-right: 0.85px solid $dark-green;
 
   padding-right: 15px;
+  @media screen and (min-width: $tablet) {
+    border-right: 1px solid $dark-green;
+  }
 }
 
 .comments__name {

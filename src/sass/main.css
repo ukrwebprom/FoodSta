@@ -91,15 +91,21 @@ img {
   height: 300px;
 }
 
-.reviews {
+.reviews__container {
   padding-top: 60px;
+  padding-bottom: 25px;
   letter-spacing: 0.007em;
-  font-family: "Roboto", sans-serif;
   background-color: #FFE550;
 }
+@media screen and (min-width: 768px) {
+  .reviews__container {
+    padding-bottom: 20px;
+  }
+}
 @media screen and (min-width: 1280px) {
-  .reviews {
+  .reviews__container {
     padding-top: 100px;
+    padding-bottom: 0;
   }
 }
 
@@ -128,36 +134,37 @@ img {
   }
 }
 
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 @media screen and (min-width: 768px) {
   .comments {
-    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    gap: 139px;
   }
 }
 
 .comments__item {
   padding: 8px;
+  max-width: 501px;
   background-color: #fff;
   border-radius: 0 30px 30px 30px;
 }
-.comments__item:not(:last-child) {
-  margin-bottom: 24px;
-}
 @media screen and (min-width: 768px) {
   .comments__item {
-    width: 336px;
     padding: 12px;
-  }
-  .comments__item:not(:last-child) {
-    margin: 0 32px 0 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .comments__item {
-    width: 501px;
     padding: 14px;
-  }
-  .comments__item:not(:last-child) {
-    margin-right: 139px;
   }
 }
 
@@ -194,8 +201,13 @@ img {
 .comments__reviewer {
   display: flex;
   flex-direction: column;
-  border-right: 0.854167px solid #7EB101;
+  border-right: 0.85px solid #7EB101;
   padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .comments__reviewer {
+    border-right: 1px solid #7EB101;
+  }
 }
 
 .comments__name {
