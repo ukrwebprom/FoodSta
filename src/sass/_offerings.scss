@@ -1,4 +1,139 @@
 .offerings{
-    background-color: cadetblue;
-    height:400px;
+   padding-bottom: 60px;
+    
+
+
+    background-color: $yellow-main ;
+    
+    @media screen and (min-width:$tablet) {
+            
+            
+        }
+    
+        @media screen and (min-width:$desktop) {
+            
+            
+        }
+    
+        @media screen and (max-width:$phone) {
+            
+            
+        }
+
+}
+.offerings__list{
+    margin: 0;
+    padding: 0;
+
+}
+
+.offerings__img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+
+    &--descktop{
+        display: none;
+        
+        @media screen and (min-width:$desktop) {
+            width:550px ; 
+            display: block;
+            margin-bottom: 0;
+        }
+    }
+    &--tablet{display: none;
+        @media screen and (min-width:$tablet) {
+            display: block; 
+        }
+        @media screen and (min-width:$desktop) {
+                            
+            display: none;
+        }
+
+        
+    }
+    &--mobile{
+        max-width: 100%;
+            @media screen and (min-width:$phone) {
+                width: 280px;
+            }
+        @media screen and (min-width:$tablet){
+            display: none;
+        }
+    }
+    
+}
+.offerings__title{
+    margin-bottom: 28px;
+    font: $main-font;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    color: $text-color;
+
+}
+.offerings__title--position{
+    margin-bottom:28px ;
+    @media screen and (min-width:$tablet) {
+            margin-bottom: 40px;
+            margin-right: 210px;
+        }
+    
+}
+
+.offerings__item:first-child{
+ margin-bottom: 28px;
+
+}
+.offerings__list--title{
+    
+    margin-bottom: 16px;
+    font: $main-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    color: $text-color;
+
+}
+.offerings__list--title::before {
+    content: "";
+    display: block;
+    background-image: url(../images/icons.svg#icon-rocket) ;
+    background-color: $background-color;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 8px;
+}
+.offerings__list--button{
+margin-top:28px ;
+display: flex;
+align-items: baseline;
+
+}
+.button--order{
+    margin-right: 24px;
+    padding: 10px 22px;
+
+
+    font: $main-font;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+
+
+    color: $text-color;
+    border: 2px solid $dark-green;
+    border-radius: 30px;
+
+}
+.button--read{
+    font: $main-font;
+    font-weight: 400;
+    font-size: 13.6667px;
+    line-height: 150%;
+    border: 0;
+    background-color: inherit;
 }
