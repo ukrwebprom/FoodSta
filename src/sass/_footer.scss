@@ -14,18 +14,18 @@
   }
 
   @media screen and (min-width: $tablet) {
-    background: url(../images/footer-back-bottom-tablet.png) no-repeat bottom
+    background: url(../images/footer-back-tablet.png) no-repeat bottom
         center,
       url(../images/footer-back-right-tablet.png) no-repeat right top;
-    background-size: 100% auto, 203px 365px;
+     background-size: 802px 141px, 203px 365px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background: url(../images/footer-back-bottom-tablet@2x.png) no-repeat
+      background: url(../images/footer-back-tablet@2x.png) no-repeat
           bottom center,
         url(../images/footer-back-right-tablet@2x.png) no-repeat right top;
-      background-size: 100% auto, 203px 365px;
+      background-size: 802px 141px, 203px 365px;
     }
   }
 
@@ -59,9 +59,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 40px;
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
     justify-content: flex-start;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -69,6 +71,7 @@
     flex-direction: row;
     margin-bottom: 80px;
   }
+
 }
 
 .footer__link-logo {
@@ -91,11 +94,13 @@
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    margin-top: 4px;
   }
 
   @media screen and (min-width: $tablet) {
     align-items: center;
-    column-gap: 28px;
+    gap: 28px;
+    margin-top: 17px;
     // height: 100%;
   }
 
@@ -122,15 +127,7 @@
   flex-direction: column;
   display: flex;
   width: 100%;
-  margin-bottom: 60px;
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 100px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 80px;
-  }
+  
 }
 
 //   @media screen and (min-width: 1280px) {

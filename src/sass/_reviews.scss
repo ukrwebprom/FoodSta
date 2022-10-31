@@ -1,4 +1,123 @@
-.reviews{
-    background-color: azure;
-    height:300px;
+.reviews__container {
+  padding-top: 60px;
+  padding-bottom: 25px;
+  letter-spacing: 0.007em;
+  background-color: $yellow-main;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+.reviews__text {
+  margin-bottom: 32px;
+
+  font-size: 14px;
+  line-height: 1.14;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    gap: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    gap: 139px;
+  }
+}
+
+.comments__item {
+  padding: 8px;
+  max-width: 501px;
+  background-color: #fff;
+  border-radius: 0 30px 30px 30px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 14px;
+  }
+}
+
+.rating {
+  display: flex;
+
+  margin-bottom: 28px;
+}
+
+.rating__item {
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.comments__text {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.17;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+}
+
+.comments__flex {
+  display: flex;
+  align-items: center;
+}
+
+.comments__photo {
+  margin-right: 16px;
+}
+
+.comments__reviewer {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.85px solid $dark-green;
+
+  padding-right: 15px;
+  @media screen and (min-width: $tablet) {
+    border-right: 1px solid $dark-green;
+  }
+}
+
+.comments__name {
+  margin-bottom: 2px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.comments__person {
+  font-size: 14px;
+  line-height: 150%;
 }
