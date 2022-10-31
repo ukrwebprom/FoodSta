@@ -78,11 +78,12 @@
   display:flex;
   justify-content: flex-start;
   align-items: flex-start;
+  height: fit-content;
   @media screen and (min-width: $tablet){
     align-items: center;
   }
   @media screen and (min-width: $desktop){
-    align-items: flex-start;
+    align-items: center;
   }
   }
 
