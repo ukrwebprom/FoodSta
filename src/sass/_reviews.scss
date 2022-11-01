@@ -1,13 +1,23 @@
 .reviews__container {
   padding-top: 60px;
-  padding-bottom: 25px;
-  background-color: $yellow-main;
-  @media screen and (min-width: $tablet) {
-    padding-bottom: 20px;
+  padding-bottom: 60px;
+  background-color: transparent;
+  background-image: url('../images/wave-bottom-mobile.png');
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 160px;
+    background-image: url('../images/wave-bottom-480px.png');
   }
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 120px;
+    background-image: url('../images/wave-bottom-tablet.png');
+  }
+
   @media screen and (min-width: $desktop) {
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 200px;
+    background-image: url('../images/wave-bottom-desktop.png');
   }
 }
 
