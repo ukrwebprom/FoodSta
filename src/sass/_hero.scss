@@ -1,8 +1,3 @@
-.container {
-    position: relative;
-
-}
-
 .hero-title {
 
     @include font(700, 28, -1, 1.17, none, none, $text-color);
@@ -10,7 +5,7 @@
 
     @media screen and (min-width: $tablet) {
         position: absolute;
-        top: 60px;
+        top: -60px;
         @include font(700, 42, normal, 1.19, none, none, $text-color);
         max-width: 500px;
 
@@ -25,23 +20,14 @@
 .hero-text {
     @include font(400, 14, normal, 1.5, none, none, $text-color);
 
-
-
     @media screen and (min-width: $tablet) {
         @include font(400, 16, normal, 1.5, none, none, $text-color);
-        max-width: 340px;
-
-    }
-
-    @media screen and (min-width: $desktop) {
-
-        max-width: 500px;
     }
 }
 
 .flex-container {
     display: inline-flex;
-
+    position: relative;
     margin-top: 150px;
     align-items: center;
     gap: 30px;
