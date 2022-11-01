@@ -1,5 +1,43 @@
 <section class="hero">
-    <h1>Enjoy Your Favorite Food From Anywhere</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-    <button>Order Now</button>
+    <div class="container">
+        <div class="flex-container">
+            <div class="items-container">
+                <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                    eros
+                    elementum tristique.
+                    Duis
+                    cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                <button class="orderButton">Order Now</button>
+            </div>
+        <div id="slider">
+            <a href="#" class="control_next" onclick="event.preventDefault()">
+                <svg class="arrow-icon">
+                    <use href="./images/icons.svg#icon-right-arrow"></use>
+                </svg>
+            </a>
+            <a href="#" class="control_prev" onclick="event.preventDefault()">
+                <svg class="arrow-icon">
+                    <use href="./images/icons.svg#icon-left-arrow"></use>
+                </svg>
+            </a>
+            <div class="slid-wrap">
+                <ul>
+                    <li>
+                        <img srcset="./images/slider-imgs/food1-292.jpg 292w, ./images/slider-imgs/food1-584.jpg 584w, ./images/slider-imgs/food1-1056.jpg 1056w"
+                            src="./images/slider-imgs/food1-292.jpg" alt="Food 1">
+                    </li>
+                    <li>
+                        <img srcset="./images/slider-imgs/food2-292.jpg 292w, ./images/slider-imgs/food2-584.jpg 584w, ./images/slider-imgs/food2-1056.jpg 1056w"
+                            src="./images/slider-imgs/food2-292.jpg" alt="Food 2">
+                    </li>
+                    <li>
+                        <img srcset="./images/slider-imgs/food3-292.jpg 292w, ./images/slider-imgs/food3-584.jpg 584w, ./images/slider-imgs/food3-1056.jpg 1056w"
+                            src="./images/slider-imgs/food3-292.jpg" alt="Food 3">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
 </section>
