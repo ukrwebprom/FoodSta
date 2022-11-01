@@ -138,23 +138,13 @@
 	margin-bottom: 24px;
     width: 100%;
 }
- .modal-form__error {
-	color: red;
-	text-align: left;
-	font-size: 12px;
-	display: block;
-	margin-top: 3px;
-	display: none;
-    margin-left: 12px;
- 
-}
-input:valid:not(:placeholder-shown) {
-	border-color: $dark-green;
-}
 
-input:invalid:not(:placeholder-shown) {
-	border-color: red;
-}
-input:invalid:not(:placeholder-shown) + .modal-form__error {
-	display: block;
+.error{
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 1.4em;
+  color: #FF705D;
+  }
+input.error{
+  border: 1px solid #FF705D;
 }
