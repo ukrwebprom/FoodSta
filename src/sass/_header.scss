@@ -2,10 +2,30 @@
     background-color:white;
     height:72px;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    display:flex;
 }
 .header-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position:relative;
+}
+.top-nav {
+    background-color: white;
+    position:absolute;
+    right:20px;
+    bottom:0;
+    transform: translateY(100%);
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
+    overflow: hidden;
+    @media screen and (min-width:$tablet){
+        position:relative;
+        transform: translateY(0);
+        box-shadow:none;
+        background-color:transparent;
+        margin-left: auto;
+    }
 }
 .menu-btn{
     width:28px;
@@ -13,6 +33,9 @@
     border: 0;
     background-color: rgba(0,0,0,0);
     cursor: pointer;
+    @media screen and (min-width:$tablet){
+        display:none;
+    }
 }
 .menu-btn__icon {
     width:28px;
@@ -22,7 +45,30 @@
 .main-menu {
     display:flex;
     flex-direction: column;
+    @media screen and (min-width:$tablet){
+        flex-direction: row;
+        gap:28px;
+    }
 }
 .main-menu__links {
     @include font(400, 16px, 0.02em, 1.17, none, none, #000);
+    display:block;
+    padding:16px;
+    &:hover {
+        background-color: $button-green;
+    }
+    @media screen and (min-width:$tablet){
+        padding:0;
+    }
+}
+.order-btn {
+    display:none;
+    @include font(500, 13px, 0.02em, 1.5, none, none, #000);
+    padding: 6px 18px;
+    background-color: $button-green;
+    border-radius: 30px;
+    border:0;
+    @media screen and (min-width:$tablet){
+        display:flex;
+    }
 }
