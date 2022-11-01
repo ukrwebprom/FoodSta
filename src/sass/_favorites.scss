@@ -1,4 +1,111 @@
-.favorites{
-    background-color: burlywood;
-    height:300px;
+.favorites {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.favorites__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+
+.favorites__title,
+.favorites__text {
+  @media screen and (max-width: $tablet) {
+    max-width: 280px;
+  }
+}
+
+.favorites__text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.18;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}
+
+.favorites-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.favorites-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  height: 282px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 11px solid $yellow-main;
+  box-sizing: border-box;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:active,
+  &:hover {
+    border: 11px solid $button-green;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 336px;
+    min-height: 338px;
+    border: 14px solid $yellow-main;
+
+    &:active,
+    &:hover {
+      border: 14px solid $button-green;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 394px;
+    min-height: 397px;
+    border: 16px solid $yellow-main;
+
+    &:active,
+    &:hover {
+      border: 16px solid $button-green;
+    }
+  }
+}
+
+.item-none {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }
