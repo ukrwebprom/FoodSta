@@ -1,27 +1,11 @@
 .subscribe {
-  background-image: url(../images/bc-subscribe320.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: contain;
   padding-bottom: 60px;
-  padding-top: 17px;
 
-  @media screen and (min-width: 480px) {
-    background-image: url(../images/bc-subscribe480.png);
-    background-size: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/bc-subscribe768.png);
-    background-size: 768px;
+  @media screen and (min-width: $tablet) {
     padding-bottom: 100px;
-    padding-top: 46px;
   }
 
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/bc-subscribe1280.png);
-    background-size: 1280px;
-    padding-top: 134px;
+  @media screen and (min-width: $desktop) {
     padding-bottom: 64px;
   }
 }
@@ -92,8 +76,12 @@
   border: 1px solid $yellow-main;
   color: #505050;
 
-  &:focus {
-    border: 1px solid $dark-green;
+  &:valid {
+    border: 1px $dark-green;
+  }
+
+  &:not(:placeholder-shown):required:invalid  {
+    border: 1px solid #FF705D;
   }
 
   @media screen and (max-width: 767px) {
