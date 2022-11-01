@@ -200,25 +200,25 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: transparent;
-  background-image: url("../images/wave-bottom-mobile.png");
+  background-image: url("../images/wave-bottom-mobile.svg");
 }
 @media screen and (min-width: 480px) {
   .reviews__container {
-    padding-bottom: 160px;
-    background-image: url("../images/wave-bottom-480px.png");
+    padding-bottom: 167px;
+    background-image: url("../images/wave-bottom-480.svg");
   }
 }
 @media screen and (min-width: 768px) {
   .reviews__container {
     padding-bottom: 120px;
-    background-image: url("../images/wave-bottom-tablet.png");
+    background-image: url("../images/wave-bottom-tablet.svg");
   }
 }
 @media screen and (min-width: 1280px) {
   .reviews__container {
     padding-top: 100px;
     padding-bottom: 200px;
-    background-image: url("../images/wave-bottom-desktop.png");
+    background-image: url("../images/wave-bottom-desktop.svg");
   }
 }
 
