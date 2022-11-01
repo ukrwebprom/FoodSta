@@ -3,9 +3,13 @@
   padding-bottom: 60px;
   background-color: transparent;
   background-image: url('../images/wave-bottom-mobile.svg');
+  @media screen and (max-width: 480px) {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 
   @media screen and (min-width: 480px) {
-    padding-bottom: 167px;
+    padding-bottom: 166px;
     background-image: url('../images/wave-bottom-480.svg');
   }
 
