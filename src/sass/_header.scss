@@ -11,21 +11,23 @@
     position:relative;
 }
 .top-nav {
-    background-color: white;
-    position:absolute;
-    right:20px;
-    bottom:0;
-    transform: translateY(100%);
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-    border-radius: 30px 0px 30px 30px;
-    overflow: hidden;
-    @media screen and (min-width:$tablet){
-        position:relative;
-        transform: translateY(0);
-        box-shadow:none;
-        background-color:transparent;
-        margin-left: auto;
+    @media screen and (max-width:$tablet - 1){
+        background-color: white;
+        position:absolute;
+        right:20px;
+        bottom:0;
+        margin:0;
+        transform: translateY(100%);
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+        border-radius: 30px 0px 30px 30px;
+        overflow: hidden;
+        &:not(.is-open){
+            transform: translateY(-100%);
+        }
     }
+
+    margin-left: auto;
+    margin-right: 30px;
 }
 .menu-btn{
     width:28px;
@@ -41,6 +43,28 @@
     width:28px;
     height:28px;
     fill:$dark-green;
+}
+.close {
+    width:24px;
+    height:24px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    position: absolute;
+    right:4px;
+    top:4px;
+    @media screen and (min-width:$tablet){
+        display:none;
+    }
+}
+.close__icon{
+    width:24px;
+    height:24px;
+    &:hover {
+        fill:$dark-green;
+    }
 }
 .main-menu {
     display:flex;
@@ -59,6 +83,11 @@
     }
     @media screen and (min-width:$tablet){
         padding:0;
+        &:hover {
+            background-color: transparent;
+            color:$button-green;
+            text-decoration: underline;
+        }   
     }
 }
 .order-btn {
