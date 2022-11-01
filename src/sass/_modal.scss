@@ -138,7 +138,9 @@
 	margin-bottom: 24px;
     width: 100%;
 }
-
+input:not(:placeholder-shown) {
+	border-color: $dark-green;
+}
 .error{
   font-weight: 500;
   font-size: 11px;
