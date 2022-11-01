@@ -40,7 +40,6 @@
     width: 281px;
     height: 136px;
     margin-bottom: 20px;
-    margin-left: auto;
   }
 
   @media screen and (min-width: $desktop) {
@@ -51,8 +50,18 @@
 }
 
 .subscribe__container {
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    align-items: flex-end;
+  }
+
   @media screen and (min-width: $desktop) {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
@@ -80,8 +89,8 @@
     border: 1px $dark-green;
   }
 
-  &:not(:placeholder-shown):required:invalid  {
-    border: 1px solid #FF705D;
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid #ff705d;
   }
 
   @media screen and (max-width: 767px) {
