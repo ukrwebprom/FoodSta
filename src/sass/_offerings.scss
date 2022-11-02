@@ -1,36 +1,102 @@
 .offerings{
-   padding-bottom: 60px;
+    @media screen and (max-width:$tablet) {
+            padding-bottom: 60px;
+            
+        }
     
+   
+@media screen and (min-width:$tablet) and (max-width:$desktop) {
+    padding-bottom: 100px;
+    }
+        @media screen and (min-width:$desktop)  {
+            // padding-bottom: 43px;
+        }
+         background-position: top;
+         background-repeat: no-repeat;
+    
+    
+    
+    
+    
+         @media screen and (max-width:$phone) {
+             background-size: cover;
+    
+    
+             background-image: url(../images/offerings/background-320.svg);
+         }
+    
+    
+    
+    
+    
+         @media screen and (min-width:$desktop) {
+             background-image: url(../images/offerings/background-1280.svg);
+    
+    
+         }
+    
+         @media screen and (min-width:$tablet) and (max-width:$desktop) {
+             background-image: url(../images/offerings/background-768.svg);
+    
+         }
+    
+         @media screen and (min-width:$phone) and (max-width:$tablet) {
+    
+    
+             background-image: url(../images/offerings/background-480.svg);
+         }
+        
 
-
-    background-color: $yellow-main ;
     
-    @media screen and (min-width:$tablet) {
-            
-            
-        }
-    
-        @media screen and (min-width:$desktop) {
-            
-            
-        }
-    
-        @media screen and (max-width:$phone) {
-            
-            
-        }
 
 }
+.offerings--position{
+    @media screen and (min-width:$desktop) {
+            display:flex;
+            
+        }
+}
+.offerings__content{
+    @media screen and (min-width:$desktop) {
+            margin-left: 90px;
+            margin-top: 260px;
+        }
+}
+
+
+
 .offerings__list{
     margin: 0;
     padding: 0;
+    @media screen and (min-width:$tablet) {
+           display: flex;
+        }
+
+}
+.offerings__img--position{
+    @media screen and (max-width:$tablet) {
+        padding-top:41px ;
+            
+    }
+    @media screen and (min-width:$tablet) and (max-width:$desktop) {
+    padding-top: 150px;
+    }
+    @media screen and (min-width:$desktop) {
+    padding-top: 177px;
+    }
 
 }
 
 .offerings__img{
-    margin-left: auto;
+    @media screen and (max-width:$desktop) {
+           margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
+    
+        }
+
+    
+
 
     &--descktop{
         display: none;
@@ -44,6 +110,7 @@
     &--tablet{display: none;
         @media screen and (min-width:$tablet) {
             display: block; 
+
         }
         @media screen and (min-width:$desktop) {
                             
@@ -70,19 +137,60 @@
     font-size: 28px;
     line-height: 1.17;
     color: $text-color;
+    @media screen and (min-width:$desktop) {
+        margin-bottom: 20px;
+            font-weight: 700;
+                font-size: 42px;
+                line-height: 120%;
+        }
+    @media screen and (min-width:$tablet) {}
+
 
 }
 .offerings__title--position{
-    margin-bottom:28px ;
+    margin-bottom:28px;
+    
+    @media screen and (max-width:$tablet) {
+            width: 280px;
+        }
+
+
     @media screen and (min-width:$tablet) {
             margin-bottom: 40px;
-            margin-right: 210px;
+            max-width: 526px;
         }
     
 }
+.offerings__item {
+    max-width: 252px;
+    @media screen and (max-width:$tablet) {
+            margin-right: 28px;
+        }
+
+
+
+    
+    
+
+}
 
 .offerings__item:first-child{
- margin-bottom: 28px;
+    @media screen and (max-width:$tablet) {
+    
+             margin-bottom: 28px;
+    
+        }
+                @media screen and (min-width:$tablet) and (max-width:$desktop) {
+                    margin-right: 116px;
+        
+                }
+
+
+@media screen and (min-width:$tablet) {
+        
+        margin-right: 116px;
+        
+    }
 
 }
 .offerings__list--title{
@@ -95,22 +203,66 @@
     color: $text-color;
 
 }
-.offerings__list--title::before {
+
+
+.offerings__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    &--title{
+
+        @media screen and (min-width:$desktop) {
+         
+            font-size: 16px;
+            line-height: 150%;
+                
+            }
+         @media screen and (min-width:$tablet){
+            
+                font-size: 16px;
+                line-height: 19px;
+         }
+
+
+       
+    }
+}
+.offerings__icon::before {
     content: "";
     display: block;
-    background-image: url(../images/icons.svg#icon-rocket) ;
+    background-image: url(../images/offerings/rocket.svg) ;
     background-color: $background-color;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-size: contain;
+    
     background-position: center;
     margin-bottom: 8px;
+    background-repeat: no-repeat;
 }
+.offerings__icon--touch::before {
+   
+    background-image: url(../images/offerings/touch.svg);
+   
+}
+
+
+
+
 .offerings__list--button{
 margin-top:28px ;
 display: flex;
 align-items: baseline;
+@media screen and (min-width:$tablet) and (max-width:$desktop) {
+        margin-top: 40px;
+
+    }
+    @media screen and (min-width:$desktop) {
+            margin-top: 32px;
+            margin-bottom: 100px;
+     }
+
+
 
 }
 .button--order{
@@ -127,13 +279,41 @@ align-items: baseline;
     color: $text-color;
     border: 2px solid $dark-green;
     border-radius: 30px;
+    cursor: pointer;
+    transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover ,&:focus{
+        border:2px solid $hover-green;
+    }
 
 }
 .button--read{
+display:flex;
+align-items:center;
+    
+    
     font: $main-font;
     font-weight: 400;
     font-size: 13.6667px;
     line-height: 150%;
     border: 0;
     background-color: inherit;
-}
+    cursor: pointer;
+    &::after{
+        content: "";
+            display: block;
+            background-image: url(../images/offerings/vector.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 13.67px;
+            height: 13.67px;
+            margin-left:3.42px ;
+    
+                
+            }
+            @media screen and (min-width:$desktop) {
+                    display:none;
+                }
+        }
