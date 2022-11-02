@@ -1,3 +1,37 @@
-<section class="subscribe" id="subscribe">
-    <p>subscribe section</p>
-</section>
+ <section class="subscribe" id="subscribe">
+      <div class="container subscribe__container">
+        <div>
+          <img
+            srcset="
+              ./images/banan-mobile.png      161w,
+              ./images/banan-tablet.png      281w,
+              ./images/banan-desktop.png     608w,
+              ./images/banan-mobile@2x.png   322w,
+              ./images/banan-tablet@2x.png   562w,
+              ./images/banan-desktop@2x.png 1216w
+            "
+            sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, 161px"
+            class="img subscribe__img"
+            src="./images/banan-mobile.png"
+            alt="banan"
+          />
+        </div>
+        <div class="subscribe__main">
+          <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+          <p class="subscribe__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__form-input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <button class="subscribe__button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
