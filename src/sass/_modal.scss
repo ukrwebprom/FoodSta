@@ -138,7 +138,7 @@
 	margin-bottom: 24px;
     width: 100%;
 }
-input:not(:placeholder-shown) {
+.modal-form__input:not(:placeholder-shown) {
 	border-color: $dark-green;
 }
 .error{
@@ -147,6 +147,6 @@ input:not(:placeholder-shown) {
   line-height: 1.4em;
   color: #FF705D;
   }
-input.error{
+.modal-form__input.error{
   border: 1px solid #FF705D;
 }
