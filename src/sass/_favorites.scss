@@ -105,7 +105,8 @@
 }
 
 .item-none {
-  @media screen and (max-width: $tablet) {
-    display: none;
+  display:none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
   }
 }
