@@ -1,3 +1,47 @@
-<div class="modal">
-
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <p class="modal__title">Order Form</p>
+    <button class="modal__btn" data-modal-close>
+      <svg class="modal__icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal-form" id="form">
+      <div class="modal-form__filed">
+        <label for="name" class="modal-form__label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="username"
+          placeholder="Your name"
+          class="modal-form__input"
+        />
+      </div>
+      <div class="modal-form__filed">
+        <label for="phone" class="modal-form__label">Phone number</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _"
+          class="modal-form__input"
+        />
+      </div>
+      <div class="modal-form__filed">
+        <label for="email" class="modal-form__label">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          class="modal-form__input"
+        />
+      </div>
+      <button type="submit" class="modal-form__btn">Send</button>
+    </form>
+  </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+<script src="./js/modal-valid.js"></script>
+
