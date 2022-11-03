@@ -40,6 +40,11 @@
     @media (min-width: 768px) {
         display: none;
     }
+
+        &:hover,
+        &:focus {
+            fill: $yellow-main;
+        }
 }
 
 
@@ -49,6 +54,9 @@
     right: 20px;
     max-width: 100%;
     height: inherit;
+    z-index: 999;
+
+    background-color: $background-color;
     
     display: flex;
     flex-direction: column;
@@ -76,6 +84,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    
 }
 
 .mobile-menu__link {
