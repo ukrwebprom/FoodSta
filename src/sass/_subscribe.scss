@@ -1,4 +1,133 @@
-.subscribe{
-    background-color: blanchedalmond;
-    height:400px;
+.subscribe {
+  padding-bottom: 60px;
+  margin-top: -70px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 64px;
+  }
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: $text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
+}
+
+.subscribe__description {
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.subscribe__img {
+  margin-bottom: 17px;
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    width: 281px;
+    height: 136px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 608px;
+    height: 266px;
+    margin: 0;
+  }
+}
+
+.subscribe__container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    align-items: flex-end;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.subscribe__form {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.subscribe__form-input {
+  outline: none;
+  padding-left: 12px;
+  margin-bottom: 20px;
+
+  height: 42px;
+
+  border-radius: 30px;
+  border: 1px solid $yellow-main;
+  color: #505050;
+
+  &:valid {
+    border: 1px $dark-green;
+  }
+
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid #ff705d;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 395px;
+    margin-right: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+    margin-right: 32px;
+    max-height: 42px;
+  }
+}
+
+.subscribe__button {
+  display: block;
+  border: none;
+  padding: 11px 22px;
+
+  height: 42px;
+
+  border-radius: 30px;
+  background-color: $button-green;
+  color: $text-color;
+  transition: background-color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
 }
