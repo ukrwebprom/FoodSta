@@ -38,7 +38,7 @@
     display: block;
     padding-top: 28px;
     padding-bottom: 28px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
@@ -49,6 +49,7 @@
     &:hover,
     &:focus {
         color: $button-green;
+        text-decoration:underline;
     }
 }
 
