@@ -1,11 +1,12 @@
 .header {
-    position: relative;    
+    position: relative;
+
 }
 
 .header__container {
     display: flex;
     align-items: center;
-
+    position: relative;
     @media screen and (max-width: 767px) {
         min-height: 72px;
         justify-content: space-between;
