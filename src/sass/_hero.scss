@@ -58,6 +58,10 @@
     cursor: pointer;
 
     @include font(500, 13, normal, 1.53, none, none, $text-color);
+    &:hover,
+    &:active {
+       background-color: $dark-green; 
+    }
 }
 
 .swiper-container {
