@@ -79,19 +79,17 @@
   outline: none;
   padding-left: 12px;
   margin-bottom: 20px;
-
   height: 42px;
-
   border-radius: 30px;
-  border: 1px solid $yellow-main;
+  border: 0.85px solid $yellow-main;
   color: #505050;
 
   &:valid {
-    border: 1px $dark-green;
+    border-color: $dark-green;
   }
 
   &:not(:placeholder-shown):required:invalid {
-    border: 1px solid #ff705d;
+    border-color: $field-error;
   }
 
   @media screen and (max-width: 767px) {
@@ -108,23 +106,27 @@
     margin-right: 32px;
     max-height: 42px;
   }
+  &::placeholder {
+    font-size:12px;
+    color:#505050;
+    font-weight:400;
+  }
 }
 
 .subscribe__button {
-  display: block;
   border: none;
   padding: 11px 22px;
-
   height: 42px;
-
   border-radius: 30px;
   background-color: $button-green;
   color: $text-color;
   transition: background-color 250ms $time-function;
-
+  font-size:13px;
+  font-weight:500;
+  cursor:pointer;
   &:hover,
   &:focus {
-    background-color: #b5ff00;
+    background-color: $button-hover;
   }
 
   @media screen and (max-width: 767px) {
