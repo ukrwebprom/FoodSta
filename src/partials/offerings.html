@@ -1,29 +1,32 @@
 <section class="offerings " id="offerings">
 
     <div class="container offerings--position">
-        <div class="offerings__img--position">
-        <img srcset="./images/offerings/apple-descktop.png 1x, ./images/offerings/apple-descktop@2x.png 2x " src="./images/offerings/apple-descktop.png" alt="яблоко" class="offerings__img offerings__img--descktop">
-        <img srcset="./images/offerings/apple-tablet.png 1x, ./images/offerings/apple-tablet@2x.png 2x " src="./images/offerings/apple-tablet.png" alt="яблоки" class="offerings__img offerings__img--tablet">
-        <img srcset="./images/offerings/apple-mobile.png 1x, ./images/offerings/apple-mobile@2x.png 2x" src="./images/offerings/apple-mobile.png" alt="яблоко" class="offerings__img offerings__img--mobile">
-  </div>
+        
+        <picture>
+            <source srcset="./images/offerings/apple-descktop.png 1x, ./images/offerings/apple-descktop@2x.png 2x" media="(min-width:1280px)" sizes="550px">
+            <source srcset="./images/offerings/apple-tablet.png 1x, ./images/offerings/apple-tablet@2x.png 2x" media="(min-width:768px)">
+            <source srcset="./images/offerings/apple-mobile.png 1x, ./images/offerings/apple-mobile@2x.png 2x" media="(max-width:767px)">
+            <img src="./images/offerings/apple-mobile.png" alt="Зеленое яблоко" />
+        </picture>
   <div class="offerings__content">
-  <div class="offerings__title--position">
+  <div class="offerings__title--box">
     <h2 class="offerings__title">What’s Special About Our Offerings </h2>
-    <p class="offerings__text offerings__text--title ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+    <p class="offerings__text--title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
     </div>
-    <ul class="offerings__list">
-        <li class="offerings__item list">
+    <ul class="offerings__list list">
+        <li>
         <h3 class="offerings__list--title offerings__icon">Fasest Delivery</h3>
-        <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p></li>
+        <p class="offerings__list--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p></li>
 
-        <li class="offerings__item list">
+        <li>
         <h3 class="offerings__list--title offerings__icon offerings__icon--touch">Easy to order</h3>
-        <p class="offerings__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p></li>
+        <p class="offerings__list--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p></li>
     </ul>
-    <ul class="offerings__list offerings__list--button">
-        <li class="list"><button type="button" class="button--order">Order Now</button></li>
-        <li class="list"><button type="button" class="button--read" >Read more </button></li>
-    </ul>
+    <div class="offerings__buttons">
+        <button type="button" class="button--order" data-modal-open3>Order Now</button>
+        <button type="button" class="button--read" >Read more </button>
+    </div>
+    
 </div>
 
 
