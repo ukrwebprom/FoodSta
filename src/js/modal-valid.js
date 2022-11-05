@@ -1,5 +1,7 @@
 $(function(){
     var $form = $("#form");
+    var $form2 = $("#subscribe_form1");
+    var $form3 = $("#subscribe_form2");
     if($form.length){
      $form.validate(
          {
@@ -39,5 +41,43 @@ $(function(){
              }
          }
      )
+    }
+
+
+    if($form2.length){
+        $form2.validate(
+            {
+                rules:{
+                    email:{
+                        required: true,
+                        email: true
+                    }
+                },
+                messages:{
+                   email:{
+                    required:'⚠ This field is required',
+                    email: '⚠ Please enter a valid email address'
+                   }
+                }
+            }
+        )
+    }
+    if($form3.length){
+        $form3.validate(
+            {
+                rules:{
+                    email:{
+                        required: true,
+                        email: true
+                    }
+                },
+                messages:{
+                   email:{
+                    required:'⚠ This field is required',
+                    email: '⚠ Please enter a valid email address'
+                   }
+                }
+            }
+        )
     }
  })

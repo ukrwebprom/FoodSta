@@ -70,20 +70,40 @@
 }
 
 .subscribe__form {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  gap:20px;
+  @media screen and (min-width:$tablet) {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:22px;
+  }
   @media screen and (min-width: $desktop) {
-    display: flex;
+    gap:32px;
   }
 }
-
+.form-field{
+  display:flex;
+  flex-direction: column;
+  gap:4px;
+  position:relative;
+}
+.form-field > #email-error {
+  @media screen and (max-width:$tablet - 1) {
+    position:absolute;
+    bottom:-20px;
+  }
+}
 .subscribe__form-input {
   outline: none;
   padding-left: 12px;
-  margin-bottom: 20px;
   height: 42px;
   border-radius: 30px;
   border: 0.85px solid $yellow-main;
   color: #505050;
-
+  font-size:12px;
+  font-weight: 400;
   &:valid {
     border-color: $dark-green;
   }
@@ -98,12 +118,9 @@
 
   @media screen and (min-width: $tablet) {
     width: 395px;
-    margin-right: 22px;
   }
 
   @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
-    margin-right: 32px;
     max-height: 42px;
   }
   &::placeholder {
@@ -111,6 +128,10 @@
     color:#505050;
     font-weight:400;
   }
+}
+
+.subscribe__form-input.error {
+  font-size: 12px;
 }
 
 .subscribe__button {
