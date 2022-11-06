@@ -6,11 +6,9 @@
     background-image: url(../images/offerings/background-320.svg);
     background-repeat: no-repeat;
     background-position: top;
-    max-width:1920px;
     padding-top: 41px;
     padding-bottom: 60px;
     @media screen and (min-width:$phone) {
-        //background-size: auto;
         background-image: url(../images/offerings/background-480.svg);
     }
     
