@@ -74,11 +74,13 @@
   border: 11px solid $yellow-main;
   box-sizing: border-box;
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms $time-function;
+  transition: transform 250ms $time-function;
 
   &:active,
   &:hover {
     border: 11px solid $button-green;
+    transform: scale(105%);
   }
 
   @media screen and (min-width: $tablet) {
