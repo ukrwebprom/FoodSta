@@ -94,6 +94,7 @@
 
 .swiper {
     overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
     border-radius: 50%;
     border: 14px solid #FFE550;
 
