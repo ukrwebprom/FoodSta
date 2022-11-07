@@ -192,3 +192,21 @@
         display:none;
     }
 }
+.extra-text {
+    display: none;
+}
+#read-more:checked ~ .extra-text {
+	display: block;
+}
+
+.less {
+	display: none;
+}
+
+#read-more:checked ~ .offerings__buttons .button--read .more {
+	display: none;
+}
+
+#read-more:checked ~ .offerings__buttons .button--read .less {
+	display: inline;
+}
